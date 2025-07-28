@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/Second_Page.dart';
+import 'package:test_app/first.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color.fromARGB(255, 65, 170, 191),
         ),
       ),
-      home: const MyHomePage(title: 'Flutter app Home Page'),
+      home: const MyHomePage(title: 'Flutter Home Page'),
     );
   }
 }
@@ -46,6 +49,28 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
 
         title: Text(widget.title),
+        leading: Icon(Icons.line_weight_outlined),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                (MaterialPageRoute(builder: (context) => firstPage())),
+              );
+            },
+            icon: Icon(Icons.settings),
+          ),
+
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                (MaterialPageRoute(builder: (context) => SecondPage())),
+              );
+            },
+            icon: Icon(Icons.info),
+          ),
+        ],
       ),
       body: Center(
         child: Container(
