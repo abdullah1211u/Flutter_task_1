@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 169, 64, 156),
+          seedColor: const Color.fromARGB(255, 65, 170, 191),
         ),
       ),
-      home: const MyHomePage(title: 'Flutter  Home Page'),
+      home: const MyHomePage(title: 'Flutter app Home Page'),
     );
   }
 }
@@ -51,22 +51,30 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           height: 200,
           width: 200,
-          decoration: BoxDecoration(color: Colors.blue),
+          decoration: BoxDecoration(
+            color: Colors.blue,
+            borderRadius: BorderRadius.circular(20),
+          ),
           child: Center(
             child: Text(
               'Hello flutter',
-              style: TextStyle(color: const Color.fromARGB(255, 113, 7, 7)),
+              style: TextStyle(
+                color: const Color.fromARGB(255, 113, 7, 7),
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
       ),
 
       bottomNavigationBar: Container(
-        padding: const EdgeInsets.only(left: 20, right: 20),
+        padding: const EdgeInsets.only(left: 30, right: 40),
         height: 40,
         width: 100,
         decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 62, 140, 155),
+          color: const Color.fromARGB(255, 216, 108, 124),
+          borderRadius: BorderRadius.circular(30),
         ),
       ),
       floatingActionButton: FloatingActionButton(
