@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
 
         title: Text(widget.title),
-        leading: Icon(Icons.line_weight_outlined),
+        leading: Icon(Icons.account_box),
         actions: [
           IconButton(
             onPressed: () {
@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 (MaterialPageRoute(builder: (context) => SecondPage())),
               );
             },
-            icon: Icon(Icons.info),
+            icon: Icon(Icons.search),
           ),
         ],
       ),
