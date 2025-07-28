@@ -825,13 +825,13 @@ class _ProfileDetailsScreenState extends State<ProfileDetailsScreen> {
               ),
             ),
             const Divider(color: Colors.teal, thickness: 2),
-            _buildInfoTile(Icons.person, 'Name', 'John Doe'),
-            _buildInfoTile(Icons.email, 'Email', 'john.doe@example.com'),
-            _buildInfoTile(Icons.phone, 'Phone', '+123 456 7890'),
+            _buildInfoTile(Icons.person, 'Name', 'Md Abdullah'),
+            _buildInfoTile(Icons.email, 'Email', 'abd.ph@example.com'),
+            _buildInfoTile(Icons.phone, 'Phone', '+8823 456 7890'),
             _buildInfoTile(
               Icons.location_on,
               'Address',
-              '123 Pharma Lane, MediCity',
+              '000 pharmacy road,Khulna',
             ),
             const SizedBox(height: 30),
 
