@@ -361,7 +361,7 @@ class PharmacyHomePage extends StatelessWidget {
             label: 'Categories',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.local_pharmacy),
+            icon: Icon(Icons.local_pharmacy, color: Colors.deepOrange),
             label: 'Pharmacies',
           ),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),

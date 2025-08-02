@@ -30,6 +30,7 @@ class AppColors {
 
 // Theme switcher
 class ThemeNotifier extends ChangeNotifier {
+  //inheritance
   bool _isDarkMode = true;
   ThemeMode get themeMode => _isDarkMode ? ThemeMode.dark : ThemeMode.light;
 
@@ -394,12 +395,14 @@ class CalculatorButton extends StatelessWidget {
           elevation: 2,
           shadowColor: theme.scaffoldBackgroundColor.withOpacity(0.4),
         ),
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: fontSize,
-            fontWeight: FontWeight.w500,
-            color: getTextColor(),
+        child: FittedBox(
+          child: Text(
+            text,
+            style: TextStyle(
+              fontSize: fontSize,
+              fontWeight: FontWeight.w500,
+              color: getTextColor(),
+            ),
           ),
         ),
       ),
