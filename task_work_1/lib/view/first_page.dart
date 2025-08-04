@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:task_work_1/controller/firstpage_controller.dart';
 
@@ -17,6 +18,7 @@ class FirstPage extends StatelessWidget {
               style: TextStyle(color: Color.fromARGB(255, 211, 11, 11)),
             ),
           ),
+
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -38,9 +40,25 @@ class FirstPage extends StatelessWidget {
                     color: Color.fromARGB(137, 5, 33, 174),
                   ),
                 ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: const Color.fromARGB(255, 0, 0, 0),
+                      width: 100,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                Image.asset('assets/images/logo2.png', width: 200, height: 200),
+                Image.network(
+                  'https://beecrowd.com/wp-content/uploads/2024/04/2022-06-23-Flutter.jpg',
+                  width: 200,
+                  height: 200,
+                ),
               ],
             ),
           ),
+
           floatingActionButton: FloatingActionButton(
             onPressed: () {
               controller.counter++;
