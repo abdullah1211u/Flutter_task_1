@@ -29,12 +29,15 @@ class PharmacyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'MediCare Pharmacy',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Color.fromARGB(255, 232, 78, 7)),
         ),
-        backgroundColor: Colors.teal,
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         actions: [
           IconButton(
-            icon: const Icon(Icons.shopping_cart, color: Colors.white),
+            icon: const Icon(
+              Icons.shopping_cart,
+              color: Color.fromARGB(255, 231, 83, 9),
+            ),
             onPressed: () {
               // TODO: Navigate to Cart Screen
               ScaffoldMessenger.of(context).showSnackBar(
@@ -45,7 +48,10 @@ class PharmacyHomePage extends StatelessWidget {
             },
           ),
           IconButton(
-            icon: const Icon(Icons.notifications, color: Colors.white),
+            icon: const Icon(
+              Icons.notifications,
+              color: Color.fromARGB(255, 231, 59, 7),
+            ),
             onPressed: () {
               // TODO: Navigate to Notifications Screen
               ScaffoldMessenger.of(context).showSnackBar(
