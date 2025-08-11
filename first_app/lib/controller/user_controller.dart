@@ -7,7 +7,7 @@ class UserController with ChangeNotifier {
   final User _user = User(
     name: 'Md Abdullah',
     age: 0,
-    localImage: 'assets/images/profile.jpg',
+    localImage: 'assets/images/profile.png',
     networkImage:
         'https://thumbs.dreamstime.com/b/boy-profile-pic-377717719.jpg',
     profileIcon: Icons.person,

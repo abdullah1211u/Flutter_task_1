@@ -39,12 +39,24 @@ class UserProfilePage extends StatelessWidget {
               // Displaying the profile picture from a network URL.
               CircleAvatar(
                 radius: 60,
-                backgroundImage: NetworkImage(user.networkImage),
-                onBackgroundImageError: (exception, stackTrace) {
-                  // Fallback to a local asset if the network image fails.
-                  Image.asset('assets/images/profile.jpg');
-                },
+                backgroundImage:
+                    Image.asset(
+                      'assets/images/profile2.png',
+                    ).image /*  NetworkImage(user.networkImage) */, // onBackgroundImageError: (exception, stackTrace) {
+                //   // Fallback to a local asset if the network image fails.
+                //   Image.asset('assets/images/profile.png');
+                // },
               ),
+              // Container(
+              //   height: 50,
+              //   width: 50,
+              //   decoration: BoxDecoration(
+              //     image: DecorationImage(
+              //       image: Image.asset('assets/images/profile.png').image,
+              //     ),
+              //     shape: BoxShape.circle,
+              //   ),
+              // ),
               const SizedBox(height: 10),
 
               // Displaying an SVG icon.

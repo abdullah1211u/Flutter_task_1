@@ -181,7 +181,7 @@ class _PharmacyHomePageState extends State<PharmacyHomePage> {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 231, 83, 9),
+                  color: Color.fromARGB(255, 222, 115, 62),
                 ),
               ),
               const SizedBox(height: 10),
@@ -232,22 +232,25 @@ class _PharmacyHomePageState extends State<PharmacyHomePage> {
         unselectedItemColor: Colors.grey[600],
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home, color: Color.fromARGB(255, 231, 83, 9)),
+            icon: Icon(Icons.home, color: Color.fromARGB(255, 222, 115, 62)),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.category, color: Color.fromARGB(255, 231, 83, 9)),
+            icon: Icon(
+              Icons.category,
+              color: Color.fromARGB(255, 222, 115, 62),
+            ),
             label: 'Categories',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.local_pharmacy,
-              color: Color.fromARGB(255, 231, 83, 9),
+              color: Color.fromARGB(255, 222, 115, 62),
             ),
             label: 'Pharmacies',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person, color: Color.fromARGB(255, 231, 83, 9)),
+            icon: Icon(Icons.person, color: Color.fromARGB(255, 222, 115, 62)),
             label: 'Profile',
           ),
         ],
