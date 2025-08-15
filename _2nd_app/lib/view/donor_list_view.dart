@@ -32,20 +32,29 @@ class DonorListView extends StatelessWidget {
                 radius: 30,
                 backgroundImage: NetworkImage(donor.image),
               ),
-              title: Text(donor.name, style: const TextStyle(fontWeight: FontWeight.bold)),
+              title: Text(
+                donor.name,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
               subtitle: Text("ফোন: ${donor.phone}"),
               // This creates the blood group badge
               trailing: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 5,
+                ),
                 decoration: BoxDecoration(
-                  color: Colors.red.shade100,
+                  color: const Color.fromARGB(255, 230, 227, 227),
                   borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: Colors.red, width: 1.5)
+                  border: Border.all(
+                    color: const Color.fromARGB(255, 145, 16, 128),
+                    width: 1.5,
+                  ),
                 ),
                 child: Text(
                   donor.bloodGroup,
                   style: const TextStyle(
-                    color: Colors.red,
+                    color: Color.fromARGB(255, 32, 5, 144),
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
