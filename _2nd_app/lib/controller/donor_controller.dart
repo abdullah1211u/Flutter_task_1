@@ -19,7 +19,7 @@ class DonorController extends GetxController {
             Center(
               child: CircleAvatar(
                 radius: 40,
-                backgroundImage: NetworkImage(donor.image),
+                backgroundImage: AssetImage(donor.image),
               ),
             ),
             const SizedBox(height: 20),

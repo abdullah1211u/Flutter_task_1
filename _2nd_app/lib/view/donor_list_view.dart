@@ -30,7 +30,7 @@ class DonorListView extends StatelessWidget {
               },
               leading: CircleAvatar(
                 radius: 30,
-                backgroundImage: NetworkImage(donor.image),
+                backgroundImage: AssetImage(donor.image),
               ),
               title: Text(
                 donor.name,
@@ -54,7 +54,7 @@ class DonorListView extends StatelessWidget {
                 child: Text(
                   donor.bloodGroup,
                   style: const TextStyle(
-                    color: Color.fromARGB(255, 32, 5, 144),
+                    color: Color.fromARGB(255, 195, 5, 5),
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
